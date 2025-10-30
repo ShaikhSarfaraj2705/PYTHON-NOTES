@@ -1,0 +1,7 @@
+FILE HANDLING
+performing file io operation 
+-opening file 
+-reading file 
+-writing in file 
+-appending flie 
+-closing file 

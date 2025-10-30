@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Top Stocks</h2>
+<table>
+    <tr>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>Change (%)</th>
+    </tr>
+    {% for stock in stocks %}
+    <tr>
+        <td><a href="{{ url_for('stock_details', symbol=stock.symbol) }}">{{ stock.symbol }}</a></td>
+        <td>{{ stock.price }}</td>
+        <td>{{ stock.change }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

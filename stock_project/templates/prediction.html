@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Stock Price Predictions</h2>
+<p>Predicted Prices for Next Month:</p>
+<table>
+    <tr>
+        <th>Stock Symbol</th>
+        <th>Predicted Price (USD)</th>
+    </tr>
+    {% for symbol, price in predicted.items() %}
+    <tr>
+        <td><a href="{{ url_for('stock_details', symbol=symbol) }}">{{ symbol }}</a></td>
+        <td>{{ price }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

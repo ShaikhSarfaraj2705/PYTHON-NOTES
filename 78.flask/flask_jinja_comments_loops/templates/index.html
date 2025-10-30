@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class X-DBGMV School</title>
+</head>
+<body>
+    {#this is a comment in jinja#}
+    {% for key in marks.keys() %}
+        <li>the marks of {{key}} is {{marks.get(key)}}
+        {% if marks.get(key)>80 %}
+        <span> Good</span>
+                    
+        {% endif %}</li>
+    {% endfor %}
+
+   
+   
+   
+    {#<ul><li>the marks of john is {{marks['john']}}</li>
+    <li>the marks of saurabh is {{marks['saurabh']}}</li>
+    <li>the marks of alexa is {{marks[alexa]}}</li>
+</ul>#}
+    <span
+</body>
+</html>

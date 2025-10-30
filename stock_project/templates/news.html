@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Latest Business News</h2>
+{% for article in articles %}
+<div style="border:1px solid #ccc; padding:10px; margin:10px 0;">
+    <h3><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h3>
+    <p>{{ article.description }}</p>
+    <small>Source: {{ article.source.name }}</small>
+</div>
+{% endfor %}
+{% endblock %}

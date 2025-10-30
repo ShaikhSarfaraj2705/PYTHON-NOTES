@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ symbol }} Details</h2>
+<div>
+    <p>Current Price: {{ info.currentPrice }}</p>
+    <p>Market Cap: {{ info.marketCap }}</p>
+    <p>PE Ratio: {{ info.trailingPE }}</p>
+</div>
+<div>
+    {{ chart | safe }}
+</div>
+{% endblock %}

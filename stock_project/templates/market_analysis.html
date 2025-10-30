@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Market Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Stock Market Analysis</h1>
+    <div>
+      <a href="/">Home</a>
+      <a href="/news">News</a>
+      <a href="/market-analysis">Market Analysis</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Sector Performance</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sector</th>
+            <th>Performance (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for sector, perf in performance.items() %}
+          <tr>
+            <td>{{ sector }}</td>
+            <td>{{ perf }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Stock Market Dashboard | Designed with ❤️</p>
+  </div>
+</body>
+</html>
