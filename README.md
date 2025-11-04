@@ -6,8 +6,8 @@ This repository documents everything I’ve learned and built — from Python ba
 
 ## 📅 Journey Overview
 
-|          Phase               |                   Topics Covered                     | Days   |
-|:-----------------------------|:-----------------------------------------------------|:------:|
+|          Phase               |                   Topics Covered                     |         |
+|:-----------------------------|:-----------------------------------------------------|:-------:|
 | 🧠 **Python Basics**        | Syntax, Variables, Loops, Functions, Data Types       | 1–20   |
 | ⚙️ **Intermediate Python**  | File I/O, OS, Math, OOPs, Comprehensions              | 21–40  |
 | 💻 **Advanced Python**      | Decorators, Generators, Regex, Virtual Envs, JSON     | 41–60  |
