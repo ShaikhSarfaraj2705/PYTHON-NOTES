@@ -4,6 +4,7 @@
 tup=(22,55,77,323,6,66,3,7,36,3,22,22)
 print(tup)
 tup1=(6,)   #for single value in tuple we need to add comma at end
+
 print(tup1)
 print("_________________________________________________")       
 
