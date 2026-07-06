@@ -1,0 +1,33 @@
+<!-- # =====================================================
+# DJANGO TEMPLATE LANGUAGE (DTL)
+# =====================================================
+# DTL is used to display dynamic data inside HTML.
+# Syntax:
+{{ variable }}
+# Used for variables
+{# {% tag %} #}
+# Used for template tags
+{# comment #}
+# Used for comments -->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Name : {{ name  }}</h2>
+    <h2>City : {{ city  }}</h2>
+
+    <!-- if Tag -->
+    {% if age >= 18 %}
+    <h2>Eligible for Voting</h2>
+    {% else %}
+    <h2>Not Eligible</h2>
+    {% endif %}
+
+
+
+</body>
+
+</html>

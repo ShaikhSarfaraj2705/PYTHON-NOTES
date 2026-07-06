@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Django Website</title>
+
+</head>
+
+<body>
+
+    <!-- Include Navigation Bar -->
+    {% include 'includes/navbar.html' %}
+
+    <hr>
+
+    <!-- Child pages will display content here -->
+    {% block content %}
+
+    {% endblock %}
+
+    <hr>
+
+    <!-- Include Footer -->
+    {% include 'includes/footer.html' %}
+
+</body>
+
+</html>

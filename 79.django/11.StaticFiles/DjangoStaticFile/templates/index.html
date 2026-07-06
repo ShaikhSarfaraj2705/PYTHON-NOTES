@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Static Files</title>
+
+    <!-- Load static template tag -->
+    {% load static %}
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+
+          href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+<h1>Django Static Files</h1>
+
+<!-- Image -->
+<img src="{% static 'images/logo.png' %}"
+
+     width="200">
+
+<!-- JavaScript -->
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

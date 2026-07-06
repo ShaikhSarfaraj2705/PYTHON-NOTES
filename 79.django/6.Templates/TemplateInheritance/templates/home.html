@@ -1,0 +1,70 @@
+<!-- # =====================================================
+# TEMPLATE INHERITANCE
+# =====================================================
+
+# Template Inheritance allows multiple HTML pages
+# to share a common layout.
+
+# Instead of writing the same HTML code
+# (Header, Navbar, Footer) on every page,
+# we create one base template and extend it.
+
+# Advantages:
+# 1. Reduces duplicate code
+# 2. Easy to maintain
+# 3. Consistent website layout
+# 4. Faster development
+
+
+
+# =====================================================
+# STATIC VS DYNAMIC CONTENT
+# =====================================================
+
+# Static Content
+# ----------------
+# Fixed content that does not change.
+#
+# Example:
+# Company Name
+# Logo
+# Footer
+# Navigation Menu
+
+# Dynamic Content
+# ----------------
+# Content generated at runtime.
+#
+# Example:
+# Username
+# Product List
+# Student Data
+# Database Records
+
+
+# =====================================================
+# INCLUDE TAG
+# =====================================================
+
+# The include tag inserts one template
+# inside another template. -->
+
+
+
+
+
+{% extends 'base.html' %}
+
+<!-- Content Block -->
+
+{% block content %}
+
+<h1>Home Page</h1>
+
+<p>Welcome to Django Template Inheritance.</p>
+
+<h2>Name : {{ name }}</h2>
+
+<h2>Course : {{ course }}</h2>
+
+{% endblock %}
